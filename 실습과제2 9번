@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("태어난 연도를 입력하세요: ");
+        int year = int.Parse(Console.ReadLine());
+
+        string[] zodiac =
+        {
+            "원숭이", "닭", "개", "돼지",
+            "쥐", "소", "범", "토끼",
+            "용", "뱀", "말", "양띠"
+        };
+
+        Console.WriteLine("당신의 띠는 " + zodiac[year % 12] + "입니다.");
+    }
+}
